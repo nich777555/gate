@@ -41,7 +41,7 @@ VPNGATE_MIRROR = os.environ.get(
     "VPNGATE_MIRROR",
     "https://raw.githubusercontent.com/fdciabdul/Vpngate-Scraper-API/main/json/data.json",
 )
-WORKER_CHECK_URL = os.environ.get("CHECK_WORKER", "https://nii.nich777.ccwu.cc/check?sstp=vpn:vpn@")
+WORKER_CHECK_URL = os.environ.get("CHECK_WORKER", "https://你的域名/check?sstp=vpn:vpn@")
 CONCURRENCY = max(1, int(os.environ.get("CHECK_CONCURRENCY", "32")))
 CHECK_TIMEOUT = float(os.environ.get("CHECK_TIMEOUT", "90"))
 MAX_CHECK_NODES = int(os.environ.get("MAX_CHECK_NODES", "0"))
@@ -85,7 +85,7 @@ EDGE_HOSTS = [
     h.strip()
     for h in os.environ.get(
         "EDGE_HOSTS",
-        "gitlab.com:443,hsl.upstate.edu:443,autz.org:443,kaspa.stream:443,saas.sin.fan:443,cdn.204910.best:443,www.mfyx.cn:443,p.etime.vip:443,cdn.ctn32.us.kg:443,cf.877774.xyz:443,spring.io:443,"
+        "gitlab.com:443,hsl.upstate.edu:443,autz.org:443,kaspa.stream:443,www.cancilleria.gov.co:443,saas.sin.fan:443,cdn.204910.best:443,www.mfyx.cn:443,p.etime.vip:443,cdn.ctn32.us.kg:443,cf.877774.xyz:443,spring.io:443,"
         "cf.nyanya.moe:443,www.sloomb.com:443,op.chinwa.eu.cc:443,www.leics.police.uk:443,securecircle.com:443,www.shopify.com:443,"
         "www.carousell.sg:443,www.dbs.com.sg:443,openai.com:443,linear.app:443,www.bilibili.com:443,uspto.gov:443,www.vmware.com:443",
     ).split(",")
@@ -93,7 +93,7 @@ EDGE_HOSTS = [
 ]
 
 # 优选 API 地址配置 (支持逗号分隔多个，可配置在 GitHub Action Secret / Env 中)
-OPTIMAL_API = os.environ.get("OPTIMAL_API", "https://cf.090227.xyz/ct?ips=6&port=443,https://cf.090227.xyz/cmcc?ips=8&port=443[cite: 3]")
+OPTIMAL_API = os.environ.get("OPTIMAL_API", "https://cf.090227.xyz/cmcc?ips=8&port=443[cite: 3],https://cf.090227.xyz/ct?ips=6&port=443")
 
 NODES_URL = os.environ.get("NODES_URL", "https://nich777555.github.io/gate/nodes.txt")
 
